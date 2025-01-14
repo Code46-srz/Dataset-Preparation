@@ -5,7 +5,8 @@ import os
 import numpy as np
 
 def ssim_pytorch(img1, img2, window_size=11, size_average=True):
-    """Compute SSIM using PyTorch, GPU-accelerated."""
+    """Compute SSIM using PyTorch, GPU-accelerated.
+    """
     img1 = torch.tensor(img1).float().unsqueeze(0).unsqueeze(0).cuda()
     img2 = torch.tensor(img2).float().unsqueeze(0).unsqueeze(0).cuda()
 

@@ -3,6 +3,10 @@ import requests
 import time  # For retry backoff
 
 def get_image_urls(query, api_key, cx, num_results=100, output_file="image_urls.txt"):
+    """Fetch image URLs using Google Custom Search API.
+       Be sure to replace 'API_KEY' and 'CX' with your own values.
+       Also be aware the free tier of the API has usage limits. 
+    """ 
     url_path = "https://www.googleapis.com/customsearch/v1"
     image_urls = []
     results_per_page = 10
@@ -58,8 +62,8 @@ def get_image_urls(query, api_key, cx, num_results=100, output_file="image_urls.
     return image_urls
 
 # Example usage
-API_KEY = "AIzaSyAcAK46IiQCxxZl68r15DS7oxnKx_t6Y1A"  # Replace with your API Key
-CX = "a75fb3cd41e2e460b"  # Replace with your Custom Search Engine ID
+API_KEY = "API KEY"  # Replace with your API Key
+CX = "CX"  # Replace with your Custom Search Engine ID
 QUERY = "quadcopter"  # Search term
 NUM_RESULTS = 35  # Number of image URLs to fetch
 OUTPUT_FILE = "drone_images_urls_val.txt"  # Output file name

@@ -48,7 +48,7 @@ def find_near_duplicates(folder_path, threshold=5):
 
 # Example usage
 if __name__ == "__main__":
-    folder = "/home/virtual46/tool_images"  # Replace with your folder path
+    folder = "path/to/images"  # Replace with your folder path
 
     # Step 1: Remove exact duplicates
     remove_exact_duplicates(folder)

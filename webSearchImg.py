@@ -89,12 +89,12 @@ def download_images(urls, save_dir):
 # Example usage
 if __name__ == "__main__":
 # Example usage
-    API_KEY = "AIzaSyAcAK46IiQCxxZl68r15DS7oxnKx_t6Y1A"  # Replace with your API Key
-    CX = "a75fb3cd41e2e460b"  # Replace with your Custom Search Engine ID
-    QUERY = "claw hammer"  # Search term
+    API_KEY = ""  # Replace with your API Key
+    CX = ""  # Replace with your Custom Search Engine ID
+    QUERY = "cars"  # Search term 
     NUM_RESULTS = 55  # Number of image URLs to fetch
     OUTPUT_FILE = "Tools_logs.txt"  # Output file name
-    SAVE_DIR = "/home/virtual46/tool_images"
+    SAVE_DIR = "path/to/save/images"  # Directory to save images
 
     print("Fetching image URLs...")
     urls = get_image_urls(QUERY, API_KEY, CX, NUM_RESULTS, OUTPUT_FILE)

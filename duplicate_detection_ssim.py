@@ -3,6 +3,7 @@ import cv2
 import os
 
 def compare_images_ssim(image1_path, image2_path):
+    """Compare two images using SSIM."""
     image1 = cv2.imread(image1_path, cv2.IMREAD_GRAYSCALE)
     image2 = cv2.imread(image2_path, cv2.IMREAD_GRAYSCALE)
 
@@ -31,7 +32,7 @@ def find_duplicates_ssim(folder_path, threshold=0.95):
     return duplicates
 
 # Example usage
-folder = "/home/virtual46/tool_images"
+folder = "path/to/images"# Replace with your image folder path
 similar_images = find_duplicates_ssim(folder)
 for img1, img2 in similar_images:
     print(f"Duplicate pair: {img1}, {img2}")
