@@ -66,8 +66,8 @@ API_KEY = "API KEY"  # Replace with your API Key
 CX = "CX"  # Replace with your Custom Search Engine ID
 QUERY = "quadcopter"  # Search term
 NUM_RESULTS = 35  # Number of image URLs to fetch
-OUTPUT_FILE = "drone_images_urls_val.txt"  # Output file name
+OUTPUT_FILE = "outputfile"  # Output file name
 
 print(f"Fetching {NUM_RESULTS} image URLs for query: '{QUERY}'")
 image_urls = get_image_urls(QUERY, API_KEY, CX, NUM_RESULTS, OUTPUT_FILE)
-print(f"Saved {len(image_urls)} URLs to {os.path.join('/home/virtual46/url_logs/', OUTPUT_FILE)}")
+print(f"Saved {len(image_urls)} URLs to {os.path.join('/path/to/folder/', OUTPUT_FILE)}")#change the path to the folder where you want to save the file

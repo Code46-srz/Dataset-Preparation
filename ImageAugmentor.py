@@ -76,13 +76,13 @@ class ImageAugmentor:
 
 # Example usage
 if __name__ == "__main__":
-    folder = "/home/virtual46/tool_tape_measure_images"  # Path to the folder containing images
+    folder = "path/to/folder"  # Path to the folder containing images
     save_dir = 1  # Directory to save augmented images
 
     augmentor = ImageAugmentor(folder, save_dir)
 
     # Augment a specific image
-    image_path = "/home/virtual46/tool_tape_measure_images/stanley.jpg"  # Replace with your image file
+    image_path = "path/to/folder"  # Replace with your image file
     augmentor.augment_image(image_path, num_variations=8)
 
     # Augment random images

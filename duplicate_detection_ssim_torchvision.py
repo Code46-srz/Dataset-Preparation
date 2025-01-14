@@ -86,7 +86,7 @@ def compare_images_in_folder(folder_path, threshold=0.95, delete_duplicates=Fals
 
 # Example usage
 if __name__ == "__main__":
-    folder = "/home/virtual46/tool_tape_measure_images/"  # Replace with your image folder path
+    folder = "paht/to/folder"  # Replace with your image folder path
     threshold = 0.95  # Set your SSIM similarity threshold
     delete_duplicates = True  # Set to True to enable deletion of duplicates
 
